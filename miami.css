@@ -1,0 +1,509 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style: none;
+    font-family: nunito;
+    font-size: 10px;
+}
+/* ==================================================N A V   A R E A=========================================================== */
+.logo{
+    /* border: 1px solid black; */
+    width: 12rem;
+    height:6.6rem;
+}
+.hamburger{
+    display: none;
+}
+.exit{
+    display: none;
+}
+.logo_container{
+    display:flex;
+    justify-content: space-between;
+}
+.logo img{
+    width:100%;
+    height:100%;
+}
+.space{
+    padding:2.2rem 3.8rem !important;
+}
+
+.nav_container{
+    display:flex;
+    justify-content:space-between;
+    /* border:1px solid black; */
+    align-items: center;
+    /* position:relative; */
+} 
+.nav_menu{
+    display:flex;
+}
+.list_items{
+    /* border: 1px solid black; */
+    padding:2.2rem 2rem;
+}
+.list_items a{
+    font-size: 1.6rem;
+}
+.list_items:hover{
+    background-color:black
+}
+.active{
+    background-color:black;
+}
+.active a{
+    color:white;
+}
+.list_items:hover a{
+    color:white;
+}
+nav{
+    position:sticky;
+    top:0;
+    border-top: 0.8rem solid gray;
+    background-color: white;
+    width:100%;
+    z-index: 9999999;
+}
+.list_items ul{
+    position: absolute;
+    display:none;
+}
+.drop{
+    position: relative;
+}
+.list_items:hover ul{
+    display:block;
+    top:6.5rem;
+    left:0;
+}
+.list_items:hover ul li{
+    background-color: black;
+   padding:1.6rem 0.5rem;
+   border-bottom:0.1rem solid gray;
+   text-align:center;
+}
+.list_items:hover ul li:hover {
+    background-color: blue;
+}
+.drop1{
+    position: relative;
+}
+.drop1:hover ul li{
+    padding:1.5rem 3.2rem;
+}
+.row{
+    max-width:87%;
+    margin: 0 auto;
+}
+.fa-phone{
+    border-radius: 50%;
+    color:white;
+    background-color: green;
+    padding:0.5rem;
+    font-size: 1.6rem;
+}
+.fa-phone1{
+    border:0.1rem solid black;
+}
+/* ==================================================N A V   A R E A  E N D=========================================================== */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ==================================================HERO   SECTION  BEGINS=========================================================== */
+.main{
+    height:90vh;
+    background-image: url('./img_miami/construct\(5\).jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.main_text{
+    padding-top: 15rem;
+}
+
+.main_text h1{
+    color:yellow;
+    padding-bottom:2rem;
+    font-size: 3.6rem;
+}
+.main_text p{
+    padding-bottom:7rem;
+    color:white;
+    font-size: 2rem;
+}
+.main_text .btn1 a{
+    font-weight: bold;
+    color:black;
+    font-size: 1.8rem;
+    border-radius: 2rem;
+    background-color: orange;
+    padding: 1rem 3rem;
+}
+/* ==================================================HERO   SECTION  ENDS=========================================================== */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ==================================================ABOUT   SECTION  BEGINS=========================================================== */
+.about_us{
+    background-color:rgba(128, 128, 128, 0.122);
+    padding:2.5rem;
+}
+.about_heading h1{
+    text-align: center;
+    font-size:3rem;
+    line-height: 1;
+    font-family: Pacifico;
+}
+.about_heading{
+    padding: 3rem 0 3rem;
+}
+.about_p{
+    padding-bottom: 2rem;
+}
+.about_p p{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.about_flex{
+    display:flex;
+    padding: 6rem 0 18rem;
+    gap: 2rem;
+}
+.about_card{
+    width:100%;
+    border:0.1rem solid gray;
+    padding:3rem 3rem 11rem;
+}
+.about_card h2{
+    padding-bottom: 2rem;
+    font-size: 2.8rem;
+}
+.ab-spec{
+    padding-bottom:1.5rem;
+    font-size:2rem;
+}
+.ab-spec2{
+    font-size: 1.7rem;
+    line-height: 1.15;
+}
+.fa-gem, .fa-star{
+    color:yellow;
+    font-size:2rem;
+    border-radius: 50%;
+    background-color:green;
+    padding:1.8rem;
+    margin-bottom: 1.5rem;
+}
+.fa-calculator{
+    color:yellow;
+    font-size:2rem;
+    border-radius: 50%;
+    background-color:green;
+    padding:1.8rem 2rem;
+    margin-bottom: 1.5rem;
+}
+/* ==================================================ABOUT   SECTION  ENDS=========================================================== */
+
+
+
+/* ==================================================SERVICE   SECTION  BEGINS=========================================================== */
+.service{
+    padding-bottom: 10rem;
+}
+.service_text h1{
+    font-size:3rem;
+    padding-bottom:2.5rem;
+}
+.service1 h2{
+    font-size:2.5rem;
+}
+.service1 p{
+    display:relative;
+    line-height: 1.5;
+    padding-bottom: 3rem;
+    font-size:1.6rem;
+}
+.fa-house,.fa-biohazard,.fa-car{
+    color:yellow;
+    float: left;
+    margin-right: 1.5rem;
+    font-size:2rem;
+    border-radius: 50%;
+    padding:1.8rem;
+    background-color: green;
+}
+/* ==================================================SERVICE   SECTION  ENDS=========================================================== */
+
+
+
+/* ==================================================PROJECT SECTION  BEGINS=========================================================== */
+.project{
+    background-color:rgba(128, 128, 128, 0.122);
+    padding-bottom:15rem;
+}
+.project_heading{
+    padding:8rem 0 5rem;
+    text-align: center;
+}
+.project_heading h1{
+    font-size: 3rem;
+}
+.project_heading p{
+    font-size: 2rem;
+}
+.project_flex{
+    display:flex;
+    justify-content: center;
+    gap:4rem;
+}
+.project_card{
+    width:100%;
+    height:33rem;
+    transition:0.4s;
+    position: relative;
+    border-radius: 1rem;
+    /* border: 1px solid black; */
+}
+.shade{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:0%;
+    height:100%;
+    transition:0.5s;
+    border-radius: 1rem;
+}
+.project_card:hover .shade{
+    background:linear-gradient(rgba(0, 0, 0, 0.381), rgba(255, 255, 0, 0.105));
+    width:100%;
+}
+.project_card:hover{
+    transform:translateY(-10px);
+}
+.img1{
+    width:100%;
+    height: 62%;
+    border-radius: 1rem;
+}
+.img1 img{
+    width:100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.pro_card_h2{
+    height:38%;
+    width:100%;
+    background-color: white;
+    padding:2rem 2rem;
+    border-radius: 1rem;
+}
+.pro_card_h2 h2{
+    height:100%;
+    width:100%;
+    line-height: 1.1;
+    font-size:2.2rem;
+}
+.btn_project{
+    padding-top: 10rem;
+    text-align: center;
+}
+.btn_project a{
+    font-size: 2rem;
+    color:white;
+    padding:1.2rem 0.5rem;
+    border-radius: 0.8rem;
+    background-color: orange;
+}
+/* ==================================================PROJECT  SECTION  ENDS=========================================================== */
+
+
+
+/* ==================================================BLOG SECTION  BEGINS=========================================================== */
+.blog{
+    padding-bottom: 20rem;    
+}
+.blog_heading{
+    padding:10rem;
+    text-align: center;
+}
+.blog_heading h1{
+    font-size: 3rem;
+}
+.blog_heading p{
+    font-size:2rem;
+}
+.blog_flex{
+    display:flex;
+    gap: 3.5rem;
+}
+.blog_card{
+    width:100%;
+    height:50rem;
+    transition:transform 0.5s;
+}
+.blog_card:hover{
+    transform: scale(1.05);
+}
+.img_blog{
+    width:100%;
+    height:45%;
+}
+.img_blog img{
+    width:100%;
+    height: 100%;
+}
+.blog_text{
+    width:100%;
+    height:55%;
+    background-color:rgba(128, 128, 128, 0.122);
+    padding: 2.5rem 1.5rem;
+}
+.blog_text h1{
+    width:100%;
+    height:35%;
+    line-height: 1.2;
+    padding-bottom:4rem;
+    font-size: 2rem;
+}
+.blog_text p{
+    width:100%;
+    height:65%;
+    line-height: 1.2; 
+    font-size: 1.8rem;
+}
+/* ==================================================BLOG SECTION ENDS============================================================= */
+
+/* =======================================================REVIEW SECTION BEGINS===================================================== */
+.review_flex{
+    display:flex;
+    gap:3rem;
+}
+.review{
+    background-color:rgba(128, 128, 128, 0.122);
+    padding-bottom: 12rem;
+}
+.review_txt{
+    padding:8.5rem 0;
+    text-align: center;
+}
+.review_txt h1{
+    font-size:3rem;
+}
+.review_txt p{
+    font-size:2rem;
+}
+.review_card{
+    width:100%;
+    background-color: white;
+    border-radius: 2rem 0 0 0;
+    padding:4rem;
+}
+.review_card_head{
+    padding-bottom: 4.5rem;
+}
+.slim{
+    width: 5rem;
+}
+.review_card img{
+    height: 5.5rem;
+    border-radius: 50%;
+}
+.review_card_head{
+    display:flex;
+    gap:1rem;
+    align-items: center;
+}
+.review_card_head h1{
+    font-size: 2rem;
+}
+.review_card_head p{
+    font-size: 1.6rem;
+}
+.review_p p{
+    line-height: 1.2;
+    /* border: 1px solid green; */
+    font-size: 1.6rem;
+}
+.far-star2,.fa-star-half{
+    font-size:1.5rem;
+    color:green;
+    background-color: white;
+    padding:0;
+}
+
+/* ==================================================FOO TER ================================================= */
+footer{
+    padding:8rem 0;
+    background: #252020;
+}
+.foot_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3rem;
+    color:white;
+}
+.favicon{
+    padding:0 0 3rem 1rem;
+}
+.fa-facebook,.fa-twitter,.fa-instagram-square{
+    margin-right:3rem;
+    font-size: 2rem !important;
+    color:orange !important;
+}
+.fa-brands:hover{
+    color: yellow !important;
+}
+.foot_grid h1{
+    padding-bottom: 3rem;
+    font-size: 2.7rem;
+}
+.foot_grid a, .foot_grid i, .foot_grid .social_media p,.send_me p{
+    color:rgba(150, 150, 150, 0.9);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+.quick_link h1{
+    padding-bottom: 2rem;
+}
+.quick_link a{
+    color:rgba(150, 150, 150, 0.9);
+}
+.quick_link a:hover{
+    color:yellow;
+    text-decoration: underline;
+}
+.btn_footer{
+    margin-bottom: 4rem;
+}
+.btn_footer a{
+    border:2px solid white;
+    border-radius: 3rem;
+    padding:1.6rem 5rem;
+    color:white;
+    font-size: 1.6rem;
+}
+.btn_footer a:hover{
+    background-color: rgb(249, 249, 3);
+    font-weight: 700;
+    color:black;
+}
+.input{
+    border:none;
+    background-color:transparent;
+    padding-left: 2rem;
+    font-size:1.6rem;
+    outline: 0;
+}
+.input_container{
+    border-bottom: 0.1rem solid gray;
+    width:27rem;
+}
+
+
+
+
