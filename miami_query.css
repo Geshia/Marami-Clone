@@ -259,3 +259,75 @@
     }
 }
 
+@media(max-width:400px){
+    html{
+        font-size:5px;
+    }
+    footer{
+        padding:8rem 0;
+        background: #252020;
+    }
+    .foot_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:3rem;
+        color:white;
+    }
+    .favicon{
+        padding:0 0 3rem 1rem;
+    }
+    .fa-facebook,.fa-twitter,.fa-instagram-square{
+        margin-right:3rem;
+        font-size: 2rem !important;
+        color:orange !important;
+    }
+    .fa-brands:hover{
+        color: yellow !important;
+    }
+    .foot_grid h1{
+        padding-bottom: 3rem;
+        font-size: 2.7rem;
+    }
+    .foot_grid a, .foot_grid i, .foot_grid .social_media p,.send_me p{
+        color:rgba(150, 150, 150, 0.9);
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+    .quick_link h1{
+        padding-bottom: 2rem;
+    }
+    .quick_link a{
+        color:rgba(150, 150, 150, 0.9);
+    }
+    .quick_link a:hover{
+        color:yellow;
+        text-decoration: underline;
+    }
+    .btn_footer{
+        margin-bottom: 4rem;
+    }
+    .btn_footer a{
+        border:2px solid white;
+        border-radius: 3rem;
+        padding:1.6rem 5rem;
+        color:white;
+        font-size: 1.6rem;
+    }
+    .btn_footer a:hover{
+        background-color: rgb(249, 249, 3);
+        font-weight: 700;
+        color:black;
+    }
+    .input{
+        border:none;
+        background-color:transparent;
+        padding-left: 2rem;
+        font-size:1.6rem;
+        outline: 0;
+    }
+    .input_container{
+        border-bottom: 0.1rem solid gray;
+        width:27rem;
+    }
+}
+
