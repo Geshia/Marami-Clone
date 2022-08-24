@@ -28,8 +28,8 @@
             </div>
             <div class="nav_menu">
                 <i class="fa-solid fa-circle-xmark exit" style="color:white"></i>
-                <li class="list_items active space"><a href="#home">Home</a></li>
-                <li class="list_items drop1"><a href="#aboutus">About Us  <i class="fa-solid fa-caret-down"></i></a>
+                <li class="list_items active space"><a href="index.html">home</a></li>
+                <li class="list_items drop1"><a href="#about">About Us  <i class="fa-solid fa-caret-down"></i></a>
                     <ul>
                         <li><a href="#">Vision</a></li>
                         <li><a href="#">Mission</a></li>
@@ -53,7 +53,7 @@
     </nav>
     <!-- ===========================================navigation section End=============================================== -->
     <section class="contact1">
-        <div class="row">
+        <div class="row contact2">
             <div class="contact_header">
                 <h1>Contact Us</h1>
                 <p>We love conversation let us talk!</p>
@@ -64,7 +64,7 @@
                         <input type="text" placeholder="Enter Your Full Name">
                         <input type="email" placeholder="Enter Your Email Address">
                         <input type="number" placeholder="Enter Your Phone Number">
-                        <textarea name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                        <textarea name="message" cols="30" rows="20" placeholder="Type your message..."></textarea>
                     </form>
                     <div class="form_btn_container"><a href="#" class="form_btn">Send Message</a></div>
                 </div>
@@ -135,7 +135,7 @@
             navButton.addEventListener('click', () => {
                 navMenu.classList.add('nav_open');
             });
-            escape.addEventListener('click', () => {
+            excape.addEventListener('click', () => {
                 navMenu.classList.remove('nav_open');
             });
             home.addEventListener('click', () => {
