@@ -61,7 +61,7 @@
     color:white;
 }
 nav{
-    position:sticky;
+    position:fixed;
     top:0;
     border-top: 0.8rem solid gray;
     background-color: white;
@@ -115,7 +115,7 @@ nav{
 
 /* ==================================================HERO   SECTION  BEGINS=========================================================== */
 .main{
-    height:90vh;
+    height:95vh;
     background-image: url('./img_miami/construct\(5\).jpg');
     background-size:cover;
     background-repeat:no-repeat;
@@ -225,7 +225,7 @@ nav{
 .service1 p{
     display:relative;
     line-height: 1.5;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     font-size:1.6rem;
 }
 .fa-house,.fa-biohazard,.fa-car{
@@ -434,6 +434,14 @@ nav{
     color:green;
     background-color: white;
     padding:0;
+}
+.review_controller_container{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+.review_controller{
+    border:1px solid black
 }
 
 /* ==================================================FOO TER ================================================= */

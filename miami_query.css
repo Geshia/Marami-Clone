@@ -86,11 +86,14 @@
     .project_flex{
         display:flex;
         justify-content: center;
-        gap:35px;
+        /* gap:30px; */
     }
     .project_card{
         width:100%;
         height:350px;
+    }
+    .about_card{
+        padding: 2rem 1.5rem;
     }
     .pro_card_h2 h2{
         height:100%;
@@ -170,19 +173,30 @@
         flex-direction: column;
         gap:30px;
     }
+    .about_card{
+        padding:1rem;
+    }
     .about_flex{
-       flex-direction: column;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
     .project_flex{
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
     .blog_flex{
-        flex-direction:column;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
     .blog_card{
         width:100%;
         height:400px;
+    }
+    .foot_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:3rem;
+        color:white;
     }
 }
 @media(max-width:680px){
@@ -257,27 +271,37 @@
     .project_flex{
         grid-template-columns: 1fr;
     }
+    .blog_flex{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .about_flex{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 @media(max-width:400px){
-    html{
+    /* html{
         font-size:5px;
-    }
+    } */
     footer{
         padding:8rem 0;
         background: #252020;
     }
     .foot_grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
         gap:3rem;
         color:white;
     }
     .favicon{
-        padding:0 0 3rem 1rem;
+        padding:0;
     }
     .fa-facebook,.fa-twitter,.fa-instagram-square{
-        margin-right:3rem;
+        margin-right:2rem;
         font-size: 2rem !important;
         color:orange !important;
     }
@@ -311,7 +335,7 @@
         border-radius: 3rem;
         padding:1.6rem 5rem;
         color:white;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     .btn_footer a:hover{
         background-color: rgb(249, 249, 3);
@@ -321,13 +345,13 @@
     .input{
         border:none;
         background-color:transparent;
-        padding-left: 2rem;
-        font-size:1.6rem;
+        padding-left: 0;
+        font-size:1.rem;
         outline: 0;
     }
     .input_container{
         border-bottom: 0.1rem solid gray;
-        width:27rem;
+        width:23rem;
     }
 }
 
