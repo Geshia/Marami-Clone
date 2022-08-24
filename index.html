@@ -360,7 +360,9 @@
             navButton.addEventListener('click', () => {
                 navMenu.classList.add('nav_open');
             });
-
+            escape.addEventListener('click', () => {
+                navMenu.classList.remove('nav_open');
+            });
             home.addEventListener('click', () => {
                 navMenu.classList.remove('nav_open');
             });

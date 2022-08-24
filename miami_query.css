@@ -379,13 +379,18 @@
     }
     .contact_right{
         width:100%;
+        height:250px;
+    
+    }
+    .contact_right img{
+        height:100%;
     
     }
     .contact_left{
         width:100%;
     }
     .contact_header{
-        padding-top:12%;
+        padding-top:20%;
         line-height: 1.5;
     }
 }
