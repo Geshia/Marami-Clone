@@ -172,7 +172,7 @@
     /* ============================================================================================================================ */
 @media(max-width:780px){
     .main_text{
-        padding-top: 38%;
+        padding-top: 18%;
     }
     .review_flex{
         display:flex;
@@ -366,6 +366,27 @@
     .input_container{
         border-bottom: 0.1rem solid gray;
         width:23rem;
+    }
+}
+/* ============================contact mobile query =================================================== */
+@media(max-width:530px){
+    .contact_parent{
+        padding-top:0;
+        display:flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        gap:20px;
+    }
+    .contact_right{
+        width:100%;
+    
+    }
+    .contact_left{
+        width:100%;
+    }
+    .contact_header{
+        padding-top:12%;
+        line-height: 1.5;
     }
 }
 

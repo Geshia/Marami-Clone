@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="miami.css">
+    <link rel="stylesheet" href="miami_query.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_container row">
+            <div class="logo_container">
+                <div class="logo">
+                    <img src="./img_miami/contruct(2).png" alt="">
+                </div>
+                <div>
+                    <a class="hamburger" href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="nav_menu">
+                <i class="fa-solid fa-circle-xmark exit" style="color:white"></i>
+                <li class="list_items active space"><a href="#home">Home</a></li>
+                <li class="list_items drop1"><a href="#aboutus">About Us  <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Core Values</a></li>
+                    </ul>
+                </li>
+                <li class="list_items drop"><a href="#services">Services  <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Export & Import</a></li>
+                        <li><a href="#">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="list_items"><a href="#project">Our Projects</a></li>
+                <li class="list_items space"><a href="#blog">Blog</a></li>
+                <li class="list_items"><a href="">Contact</a></li>
+                <li class='list_items'><a href=""><i class="fa-solid fa-phone"></i>  +234XXXXXXXXXX</a></li>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- ===========================================navigation section End=============================================== -->
+    <section class="contact1">
+        <div class="row">
+            <div class="contact_header">
+                <h1>Contact Us</h1>
+                <p>We love conversation let us talk!</p>
+            </div>
+            <div class="contact_parent">
+                <div class="contact_left">
+                    <form action="#" class="form_flex">
+                        <input type="text" placeholder="Enter Your Full Name">
+                        <input type="email" placeholder="Enter Your Email Address">
+                        <input type="number" placeholder="Enter Your Phone Number">
+                        <textarea name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                    </form>
+                    <div class="form_btn_container"><a href="#" class="form_btn">Send Message</a></div>
+                </div>
+                <div class="contact_right">
+                    <img src="./img_miami/computer.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_container row">
+            <div class="foot_grid">
+                <div class="office">
+                    <h1>Head Office</h1>
+                    <i>No 1, Ogbon Ajedan Street Via Iponda Road,<br>
+                        Ilase-Ijesa,Obokun LGA,<br>
+                        Osun state,Nigeria.</i>
+                </div>
+                <div class="contact">
+                    <h1>Contact info</h1>
+                    <i>+2348025535930, +2348060617345<br>
+                        info@maramin.com.ng<br>
+                        Contact@maramin.com.ng</i>
+                </div>
+                <div class="newsletter">
+                    <h1>Newsletter Signup</h1>
+                    <div class="input_container">
+                        <input class='input' type="Email" placeholder="Enter your mail">
+                    </div>
+                </div>
+                <div class="social_media">
+                    <div class="favicon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram-square"></i>
+                    </div>
+                    <p>
+                        Copyright © MARAMIN ENGINEERING LTD<br>
+                        Developed By: ADNEGS Technologies<br>
+                    </p>
+                </div>
+                <div class="quick_link">
+                    <h1>Quick Links</h1>
+                    <a href="/">Career</a>
+                    <a href="/">Investor</a>
+                    <a href="/">Terms & Condition</a><br>
+                    <a href="/">Refund Policy</a>
+                </div>
+                <div class="send_me">
+                    <div class="btn_footer">
+                        <a href="/">Send me</a>
+                    </div>
+                    <p>Please note we do not spam people</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================================javaSCRIPT================================================ -->
+    <script>
+        {
+            const navMenu = document.querySelector('.nav_menu');
+            const navButton = document.querySelector('.hamburger');
+            const excape = document.querySelector('.exit')
+
+            navButton.addEventListener('click', () => {
+                navMenu.classList.add('nav_open');
+            });
+
+            excape.addEventListener('click', () => {
+                navMenu.classList.remove('nav_open');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -48,7 +48,7 @@
                 </li>
                 <li class="list_items"><a href="#project">Our Projects</a></li>
                 <li class="list_items space"><a href="#blog">Blog</a></li>
-                <li class="list_items"><a href="">Contact</a></li>
+                <li class="list_items"><a href="contact.html">Contact</a></li>
                 <li class='list_items'><a href=""><i class="fa-solid fa-phone"></i>  +234XXXXXXXXXX</a></li>
             </div>
             
@@ -353,15 +353,21 @@
         {
             const navMenu = document.querySelector('.nav_menu');
             const navButton = document.querySelector('.hamburger');
-            const excape = document.querySelector('.exit')
+            const excape = document.querySelector('.exit');
+            const home = document.querySelector('#home');
+            const about = document.querySelector('#about');
 
             navButton.addEventListener('click', () => {
                 navMenu.classList.add('nav_open');
             });
 
-            excape.addEventListener('click', () => {
+            home.addEventListener('click', () => {
                 navMenu.classList.remove('nav_open');
             });
+            about.addEventListener('click', () => {
+                navMenu.classList.remove('nav_open');
+            });
+
         }
     </script>
 </body>
