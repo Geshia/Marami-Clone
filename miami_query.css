@@ -171,6 +171,9 @@
 
     /* ============================================================================================================================ */
 @media(max-width:780px){
+    .main_text{
+        padding-top: 38%;
+    }
     .review_flex{
         display:flex;
         flex-direction: column;
@@ -281,6 +284,14 @@
     .about_flex{
         display:grid;
         grid-template-columns: 1fr;
+    }
+    .main_text{
+        padding-top: 40%;
+    }
+}
+@media(max-width:520px){
+    .main_text{
+        padding-top: 50%;
     }
 }
 
