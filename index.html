@@ -39,14 +39,14 @@
                         <li><a href="#">Core Values</a></li>
                     </ul>
                 </li>
-                <li class="list_items drop"><a href="#services">Services  <i class="fa-solid fa-caret-down"></i></a>
+                <li class="list_items drop"><a href="#services" class="services">Services  <i class="fa-solid fa-caret-down"></i></a>
                     <ul>
                         <li><a href="#">Construction</a></li>
                         <li><a href="#">Export & Import</a></li>
                         <li><a href="#">Transportation</a></li>
                     </ul>
                 </li>
-                <li class="list_items"><a href="#project">Our Projects</a></li>
+                <li class="list_items"><a href="#project" class="ourproject">Our Projects</a></li>
                 <li class="list_items space"><a href="#blog" class="blog">Blog</a></li>
                 <li class="list_items"><a href="contact.html" class="contact">Contact</a></li>
                 <li class='list_items'><a href=""><i class="fa-solid fa-phone"></i>  +234XXXXXXXXXX</a></li>
@@ -356,6 +356,10 @@
             const excape = document.querySelector('.exit');
             const home = document.querySelector('.home');
             const about = document.querySelector('.about');
+            const services = document.querySelector('.services');
+            const ourproject = document.querySelector('.ourproject');
+            const blog = document.querySelector('.blog');
+            const contact = document.querySelector('.contact');
 
             navButton.addEventListener('click', () => {
                 navMenu.classList.add('nav_open');
@@ -369,7 +373,18 @@
             about.addEventListener('click', () => {
                 navMenu.classList.remove('nav_open');
             });
-
+            services.addEventListener('click', () => {
+                navMenu.classList.remove('nav_open');
+            });
+            blog.addEventListener('click', () => {
+                navMenu.classList.remove('nav_open');
+            });
+            ourproject.addEventListener('click', () => {
+                navMenu.classList.remove('nav_open');
+            });
+            contact.addEventListener('click', () => {
+                navMenu.classList.remove('nav_open');
+            });
         }
     </script>
 </body>
